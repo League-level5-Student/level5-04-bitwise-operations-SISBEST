@@ -5,13 +5,22 @@ public class BitShifter {
 		// 1. Jot down the value of num in binary.
 		int num = 4;
 		int numShifted = num << 1;
-		
+
 		// 2. Print the value of numShifted, and convert that value to binary.
-		
+		System.out.println(numShifted);
+		String nsb = Integer.toBinaryString(numShifted);
+		System.out.println(nsb);
+		String nb = Integer.toBinaryString(num);
+		System.out.println(nb);
 		// 3. Compare the two binary values. Can you figure out what the << operator is for?
 		
 		// 4. Try shifting num 3 places.
-		
+		numShifted = num << 3;
+		System.out.println(numShifted);
+		nsb = Integer.toBinaryString(numShifted);
+		System.out.println(nsb);
+		nb = Integer.toBinaryString(num);
+		System.out.println(nb);
 		// FYI: Binary values can be shifted to the right as well using the >> operator.	
 	}
 }
