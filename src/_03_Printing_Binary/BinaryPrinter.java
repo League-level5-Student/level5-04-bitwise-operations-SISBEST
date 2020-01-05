@@ -1,5 +1,7 @@
 package _03_Printing_Binary;
 
+import java.util.ArrayList;
+
 public class BinaryPrinter {
 	//Complete the methods below so they print the passed in parameter in binary.
 	//Use bit shifting and bit masking to print the binary numbers.
@@ -16,6 +18,14 @@ public class BinaryPrinter {
 	}
 	
 	public void printIntBinary(int i) {
+		int ct = 1;
+        ArrayList<Integer> nums = new ArrayList<Integer>();
+		while(ct<=i) {
+			ct=ct*2;
+	        nums.add(ct);
+		}
+		nums.remove(nums.size()-1);
+		
 		
 	}
 	
